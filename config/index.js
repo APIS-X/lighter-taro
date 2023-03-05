@@ -3,12 +3,12 @@ const { resolve } = require('path');
 const config = {
   projectName: 'app',
   date: '2023-2-27',
-  designWidth: 375,
+  designWidth: 750,
   deviceRatio: {
     640: 2.34 / 2,
     750: 1,
     828: 1.81 / 2,
-    375: 2 / 1,
+    // 375: 2 / 1,
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
@@ -24,10 +24,10 @@ const config = {
   },
   compiler: 'webpack5',
   cache: {
-    enable: false, // Webpack 持久化缓存配置，建议开启。默认配置请参考：https://docs.taro.zone/docs/config-detail#cache
+    enable: true, // Webpack 持久化缓存配置，建议开启。默认配置请参考：https://docs.taro.zone/docs/config-detail#cache
   },
   sass: {
-    data: `@import "@nutui/nutui-react-taro/dist/styles/variables.scss";`,
+    data: `@import "@nutui/nutui-react-taro/dist/styles/variables.scss";@import "../src/styles/variable.scss";`,
   },
   mini: {
     postcss: {

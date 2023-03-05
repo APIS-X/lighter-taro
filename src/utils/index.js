@@ -1,6 +1,8 @@
 import Taro from '@tarojs/taro';
 import queryString from 'query-string';
 
+import { isEmpty } from './tools';
+
 /**
  * 页面跳转
  * @param {String} url 链接地址，不要带参数

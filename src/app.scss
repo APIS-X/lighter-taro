@@ -1,0 +1,12 @@
+@import  '@/styles/nutui.scss';
+
+// 底部固定按钮
+.footer-fixed{
+  display: flex;
+  position: fixed;
+  background-color: #fff;
+  border-top: 1px solid #dedede;
+  bottom:0;
+  width: 100%;
+  z-index: 100;
+}

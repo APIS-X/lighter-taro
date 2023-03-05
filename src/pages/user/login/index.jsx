@@ -1,10 +1,8 @@
 import React from 'react';
 import { View } from '@tarojs/components';
 
-import { Layout } from '@/components';
-
 const PageHome = () => {
-  return <Layout>首页</Layout>;
+  return <View>这是</View>;
 };
 
 export default PageHome;

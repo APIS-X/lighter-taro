@@ -3,8 +3,8 @@ import { View } from '@tarojs/components';
 
 import { Layout } from '@/components';
 
-const PageHome = () => {
-  return <Layout>首页</Layout>;
+const PageMine = () => {
+  return <Layout activeIndex={2}>wide</Layout>;
 };
 
-export default PageHome;
+export default PageMine;

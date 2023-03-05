@@ -16,3 +16,15 @@ export const filterTrim = (data = {}, types = [undefined, '', null]) => {
 
   return tempJson;
 };
+
+/**
+ * 判断空值
+ * @param {*} value
+ * @returns bool
+ */
+export const isEmpty = (value) => {
+  if (value === null || value === undefined || value === '') {
+    return true;
+  }
+  return false;
+};

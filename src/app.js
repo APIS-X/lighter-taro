@@ -3,6 +3,8 @@ import { Provider } from 'react-redux';
 import dva from '@/utils/dva';
 import models from '@/models';
 
+import '@nutui/nutui-react/dist/style.css';
+
 import './app.scss';
 
 const dvaApp = dva.createApp({
